@@ -1,0 +1,86 @@
+@import "primeicons/primeicons.css";
+
+.sidenav {
+    background: #012a5b;
+    transition: all 0.5s ease;
+    position: fixed;
+    z-index: 1;
+    width: 12rem;
+    height: 100vh;
+    box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
+}
+
+.sidenav-collapsed {
+    width: 5rem;
+}
+
+.logo-container {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-logo-icon {
+    height: 3rem;
+    width: 11.25rem;
+    padding: 0.813rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    background-color: #012a5b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    height: 2.375rem;
+    font-size: 1.25rem;
+    padding: 0.5rem 0.5rem;
+    color: white;
+}
+
+button:hover {    
+    cursor: pointer;
+}
+
+.df_fd_cc_aic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-icon-text {
+    height: 3rem;
+    width: 10rem;
+    padding: 0.813rem;
+    border-radius: 1rem;
+    margin-bottom: 0.75rem;
+    margin-left: 1rem;
+    background-color: #012a5b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-icon-text:hover {
+    background-color: red;
+}
+
+
+.sidenav-link-icon {
+    width: 1rem;
+    color: white;
+}
+
+.sidenav-link-text {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}

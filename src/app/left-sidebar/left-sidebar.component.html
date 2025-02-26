@@ -1,1 +1,25 @@
-<p>left-sidebar works!</p>
+<div class="sidenav">
+    <div class="logo-container">
+      <li class="container-logo-icon">
+        <i class="sidenav-link-icon pi pi-arrow-left"></i>
+        <span class="sidenav-link-text">C R M</span>
+        <h1></h1>
+      </li>
+    </div>
+
+    <div class="df_fd_cc_aic">
+      <ol>
+        <li class="container-icon-text"
+          *ngFor="let item of items; trackBy: trackByIndex" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">
+            <a class="sidenav-nav-link" [routerLink]="item.routeLink" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+              <i class="sidenav-link-icon" [class]="item.icon" [ngClass]="{'pi-spin': item.icon === 'pi pi-cog' && isHovered}"></i>
+
+              <!-- @if (!isLeftSidebarCollapsed()) {-->
+                <span class="sidenav-link-text">{{ item.label }}</span>
+              <!--} -->
+
+            </a>
+        </li>
+      </ol>
+    </div>
+</div>
