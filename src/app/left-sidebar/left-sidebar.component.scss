@@ -24,9 +24,8 @@
 }
 
 .container-logo-icon {
-    height: 3rem;
     width: 11.25rem;
-    padding: 0.813rem;
+    padding: 0.875rem;
     border-radius: 1rem;
     margin-left: 1rem;
     background-color: #012a5b;
@@ -42,11 +41,7 @@ h1 {
     color: white;
 }
 
-button:hover {    
-    cursor: pointer;
-}
-
-.df_fd_cc_aic {
+.df_fd_cc_aifs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -55,7 +50,7 @@ button:hover {
 .container-icon-text {
     height: 3rem;
     width: 10rem;
-    padding: 0.813rem;
+    padding: 0.875rem;
     border-radius: 1rem;
     margin-bottom: 0.75rem;
     margin-left: 1rem;
@@ -63,16 +58,17 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .container-icon-text:hover {
     background-color: red;
 }
 
-
 .sidenav-link-icon {
     width: 1rem;
     color: white;
+    cursor: pointer;
 }
 
 .sidenav-link-text {
@@ -82,5 +78,6 @@ button:hover {
 }
 
 a {
+    font-size: 1.25rem;
     text-decoration: none;
 }

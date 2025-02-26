@@ -1,7 +1,16 @@
 .main {
-    width: calc(100% - 12rem);
+    width: calc(100% - 5rem);
     height: 100vh;
-    margin-left: 12rem;
+    margin-left: 5rem;
     padding: 6rem 3rem 3rem 3rem;
-    background-color: yellow;
+}
+
+.main-trimmed {
+    width: calc(100% - 12rem);
+    margin-left: 12rem;
+}
+  
+.main-md-screen {
+    width: calc(100% - 5rem);
+    margin-left: 5rem;
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,6 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './left-sidebar.component.scss'
 })
 export class LeftSidebarComponent {
+  isLeftSidebarCollapsed = input.required<boolean>();
+  changeIsLeftSidebarCollapsed = output<boolean>();
+  hoveredItem: any = null;
+
   items = [
     {
       routeLink: 'dashboard',
@@ -33,17 +37,27 @@ export class LeftSidebarComponent {
     },
   ];
 
-  isHovered = false;
-
-  onHover(isHovered: boolean): void {
-    this.isHovered = isHovered;
+  onHover(item: any, isHovered: boolean): void {
+    this.hoveredItem = isHovered ? item : null;
   }
   
   trackByIndex(index: number): number {
     return index;
   }
 
-  isLeftSidebarCollapsed(): boolean {
-    return false;
+  toggleCollapse(): void {
+    this.changeIsLeftSidebarCollapsed.emit(!this.isLeftSidebarCollapsed());
   }
+
+  // closeSidenav(): void {
+  //   this.changeIsLeftSidebarCollapsed.emit(true);
+  // }
+
+  // isLeftSidebarCollapsed(): boolean {
+  //   return false;
+  // }
+
+  // helloworld() {
+  //   console.log('Hello world!');
+  // }
 }
