@@ -1,4 +1,6 @@
-<app-top-navbar></app-top-navbar>
 <div class="main" [ngClass]="sizeClass()">
-    <router-outlet />
+    <app-top-navbar></app-top-navbar>
+    <div class="main-window">
+        <router-outlet />
+    </div>
 </div>

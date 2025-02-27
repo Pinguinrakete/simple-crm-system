@@ -29,8 +29,8 @@
     margin-left: 1rem;
     background-color: #012a5b;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
 }
 
 h1 {
@@ -54,7 +54,6 @@ h1 {
     margin-bottom: 0.75rem;
     margin-left: 1rem;
     white-space: nowrap;
-    background-color: #012a5b;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -69,11 +68,7 @@ h1 {
     width: 10rem;
 }
 
-.container-icon-text:hover {
-    background-color: blue;
-}
-
-.active {
+.container-icon-text:hover, .active {
     background-color: blue;
 }
 

@@ -4,15 +4,20 @@
     transition: all 0.5s ease;
     background: #f4f7fa;
     z-index: 0;
-    padding: 6rem 3rem 3rem 3rem;
 }
 
 .main-trimmed {
     width: calc(100% - 12rem);
     margin-left: 12rem;
 }
-  
+
 .main-md-screen {
     width: calc(100% - 5rem);
     margin-left: 5rem;
+}
+
+.main-window {
+    height: calc(100vh - 4rem);
+    padding: 3rem;
+
 }
