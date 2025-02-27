@@ -1,7 +1,9 @@
 .main {
     width: calc(100% - 5rem);
-    height: 100vh;
     margin-left: 5rem;
+    transition: all 0.5s ease;
+    background: #f4f7fa;
+    z-index: 0;
     padding: 6rem 3rem 3rem 3rem;
 }
 

@@ -1,21 +1,17 @@
-<div class="sidenav">
+<div class="sidenav" [ngClass]="isLeftSidebarCollapsed() ? 'sidenav-collapsed' : ''">
     <div class="logo-container">
       <li class="container-logo-icon" (click)="toggleCollapse()">
-        <i class="sidenav-link-icon pi pi-arrow-left"></i>
-        <!-- <span class="sidenav-link-text">C R M</span> -->
-        <h1></h1>
+        <i class="sidenav-link-icon pi" [ngClass]="isLeftSidebarCollapsed() ? 'pi-arrow-right' : 'pi-arrow-left'"></i>
       </li>
     </div>
     <div class="df_fd_cc_aifs">
       <ol>
-        <li class="container-icon-text"
+        <li class="container-icon-text" [ngClass]="isLeftSidebarCollapsed() ? 'icon-text-collapsed' : 'icon-text'" 
           *ngFor="let item of items; trackBy: trackByIndex" (mouseenter)="onHover(item, true)" (mouseleave)="onHover(item, false)"
           [routerLink]="item.routeLink" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
             <a>
               <i class="sidenav-link-icon" [class]="item.icon" [ngClass]="{'pi-spin': item.icon === 'pi pi-cog' && item === hoveredItem}"></i>
-               @if (!isLeftSidebarCollapsed()) {
-                <span class="sidenav-link-text">{{ item.label }}</span>
-              }
+               <span *ngIf="!isLeftSidebarCollapsed()" class="sidenav-link-text">{{ item.label }}</span>
             </a>
         </li>
       </ol>

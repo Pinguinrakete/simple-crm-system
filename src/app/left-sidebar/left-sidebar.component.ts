@@ -48,16 +48,4 @@ export class LeftSidebarComponent {
   toggleCollapse(): void {
     this.changeIsLeftSidebarCollapsed.emit(!this.isLeftSidebarCollapsed());
   }
-
-  // closeSidenav(): void {
-  //   this.changeIsLeftSidebarCollapsed.emit(true);
-  // }
-
-  // isLeftSidebarCollapsed(): boolean {
-  //   return false;
-  // }
-
-  // helloworld() {
-  //   console.log('Hello world!');
-  // }
 }

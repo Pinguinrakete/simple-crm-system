@@ -24,7 +24,6 @@
 }
 
 .container-logo-icon {
-    width: 11.25rem;
     padding: 0.875rem;
     border-radius: 1rem;
     margin-left: 1rem;
@@ -48,12 +47,13 @@ h1 {
 }
 
 .container-icon-text {
+    transition: all 0.5s ease;
     height: 3rem;
-    width: 10rem;
-    padding: 0.875rem;
+    padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 0.75rem;
     margin-left: 1rem;
+    white-space: nowrap;
     background-color: #012a5b;
     display: flex;
     align-items: center;
@@ -61,8 +61,20 @@ h1 {
     cursor: pointer;
 }
 
+.icon-text-collapsed {
+    width: 3rem;
+}
+
+.icon-text {
+    width: 10rem;
+}
+
 .container-icon-text:hover {
-    background-color: red;
+    background-color: blue;
+}
+
+.active {
+    background-color: blue;
 }
 
 .sidenav-link-icon {
@@ -75,6 +87,12 @@ h1 {
     margin-left: 1rem;
     font-size: 1.25rem;
     color: white;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.sidenav-collapsed .sidenav-link-text {
+    opacity: 0;
 }
 
 a {
