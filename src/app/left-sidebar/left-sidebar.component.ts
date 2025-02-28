@@ -21,9 +21,9 @@ export class LeftSidebarComponent {
       label: 'Dashboard',
     },
     {
-      routeLink: 'contactmanagement',
+      routeLink: 'customer-data',
       icon: 'pi pi-users',
-      label: 'User',
+      label: 'Customer',
     },  
     {
       routeLink: 'products',

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './main/menu-content/dashboard/dashboard.component';
-import  { ContactManagementComponent } from './main/menu-content/contact-management/contact-management.component';
+import  { CostumerDataComponent } from './main/menu-content/customer-data/customer-data.component';
 import { ProductsComponent } from './main/menu-content/products/products.component';
 import { SettingsComponent } from './main/menu-content/settings/settings.component';
 
@@ -8,7 +8,7 @@ import { SettingsComponent } from './main/menu-content/settings/settings.compone
 export const routes: Routes = [
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: DashboardComponent },
-    { path: 'contactmanagement', component: ContactManagementComponent },
+    { path: 'customer-data', component: CostumerDataComponent },
     { path: 'products', component: ProductsComponent },
     { path: 'settings', component: SettingsComponent },
 ];
