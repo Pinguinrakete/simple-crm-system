@@ -1,1 +1,25 @@
-<p-button icon="pi pi-users" iconPos="left" label="Add a new User" />
+<p-tabView severity="info">
+    <p-tabPanel header="Costumer"> Content 1 </p-tabPanel>
+    <p-tabPanel header="Companys">
+        <ng-template pTemplate="content"> Content 2 </ng-template>
+    </p-tabPanel>
+</p-tabView>
+<div class="card flex justify-center">
+    <div class="pos-add-costumer">
+        <p-button (click)="showAddCostumerData()" icon="pi pi-users" iconPos="left" label="Add a new User" />
+    </div>
+    <p-dialog header="Costumer data" [modal]="true" [(visible)]="visible" [style]="{ width: '50rem', 'background-color': '#F3F3F3' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+        <p-splitter [panelSizes]="[50, 50]" [style]="{ height: '300px' }" styleClass="mb-8">
+            <ng-template #panel>
+                <div class="flex items-center justify-center h-full">Panel 1</div>
+            </ng-template>
+            <ng-template #panel>
+                <div class="flex items-center justify-center h-full">Panel 2</div>
+            </ng-template>
+        </p-splitter>
+        <div class="flex justify-end gap-2">
+            <p-button label="OK" (click)="visible = false" />
+            <p-button label="Cancel" severity="secondary" (click)="visible = false" />
+        </div>
+    </p-dialog>
+</div>
