@@ -3,11 +3,12 @@ import { ButtonModule } from 'primeng/button';
 import { Dialog } from 'primeng/dialog';
 import { SplitterModule } from 'primeng/splitter';
 import { TabViewModule } from 'primeng/tabview';
+import { TextareaModule } from 'primeng/textarea';
 
 @Component({
   selector: 'app-customer-data',
   standalone: true,
-  imports: [ButtonModule, Dialog, SplitterModule, TabViewModule],
+  imports: [ButtonModule, Dialog, SplitterModule, TabViewModule, TextareaModule],
   templateUrl: './customer-data.component.html',
   styleUrl: './customer-data.component.scss'
 })
