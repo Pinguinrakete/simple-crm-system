@@ -24,6 +24,9 @@
                     </ng-template>
                 </p-splitter>
             </p-tabPanel>
+            <p-tabPanel header="Private">
+                <app-tab-private></app-tab-private>
+            </p-tabPanel>
             <p-tabPanel header="Work">
                 <app-tab-work></app-tab-work>
             </p-tabPanel>
@@ -33,7 +36,7 @@
         </p-tabView>
         <ng-template #footer>
             <p-button label="OK" (click)="visible = false" />
-            <p-button label="Cancel" severity="secondary" (click)="visible = false" />
+            <p-button label="Cancel" severity="secondary" [style]="{ 'margin-right': '18px' }" (click)="visible = false"/>
         </ng-template>
     </p-dialog>
 </div>

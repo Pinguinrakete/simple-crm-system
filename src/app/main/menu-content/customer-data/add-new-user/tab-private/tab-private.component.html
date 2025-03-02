@@ -1,0 +1,44 @@
+<div class="fd_c">
+    <div class="fd_r_jc_sb">
+        <div class="left-side">
+            <div class="fd_r_jc_r">
+                <p>Street:</p><textarea rows="3" cols="18" pTextarea></textarea>
+            </div>
+            <div class="fd_r_jc_r_ai_c">
+                <p>Place:</p>
+                <input type="text" pInputText formControlName="text" autocomplete="off" />
+            </div>
+            <div class="fd_r_jc_r_ai_c">
+                <p>[Ferderal] state:</p>
+                <input type="text" pInputText me="text" autocomplete="off" />
+            </div>
+            <div class="fd_r_jc_r_ai_c">
+                <p>Zip code</p>
+                <input type="text" pInputText formControlName="text" autocomplete="off" />
+            </div>
+            <div class="fd_r_jc_r_ai_c">
+                <p>State:</p>
+                <input type="text" pInputText formControlName="text" autocomplete="off" />
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="fd_r_jc_r_ai_c">
+                <p>Phone:</p>
+                <input type="text" pInputText formControlName="text" autocomplete="off" />
+            </div>
+            <div class="fd_r_jc_r_ai_c">
+                <p>Mobile Phone:</p>
+                <input type="text" pInputText formControlName="text" autocomplete="off" />
+            </div>
+            <div class="fd_r_jc_r_ai_c">
+                <p>Fax:</p>
+                <input type="text" pInputText formControlName="text" autocomplete="off" />
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <p>Website:</p>
+        <input type="text" [style]="{ width:'485px' }" pInputText formControlName="text" autocomplete="off" placeholder="http://" />
+        <p-button label="Go to" severity="secondary" (click)="visible = false" />
+    </div>
+</div>
