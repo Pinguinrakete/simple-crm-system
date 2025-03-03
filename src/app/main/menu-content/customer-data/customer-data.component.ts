@@ -3,6 +3,7 @@ import { ButtonModule } from 'primeng/button';
 import { Dialog } from 'primeng/dialog';
 import { SplitterModule } from 'primeng/splitter';
 import { TabViewModule } from 'primeng/tabview';
+import { TabNameAndEmailComponent } from './add-new-user/tab-name-and-email/tab-name-and-email.component';
 import { TabWorkComponent } from './add-new-user/tab-work/tab-work.component';
 import { TabNotesComponent } from './add-new-user/tab-notes/tab-notes.component';
 import { TabPrivateComponent } from './add-new-user/tab-private/tab-private.component';
@@ -10,7 +11,7 @@ import { TabPrivateComponent } from './add-new-user/tab-private/tab-private.comp
 @Component({
   selector: 'app-customer-data',
   standalone: true,
-  imports: [ButtonModule, Dialog, SplitterModule, TabViewModule, TabWorkComponent,TabNotesComponent, TabPrivateComponent],
+  imports: [ButtonModule, Dialog, SplitterModule, TabViewModule, TabNameAndEmailComponent, TabWorkComponent,TabNotesComponent, TabPrivateComponent],
   templateUrl: './customer-data.component.html',
   styleUrl: './customer-data.component.scss'
 })

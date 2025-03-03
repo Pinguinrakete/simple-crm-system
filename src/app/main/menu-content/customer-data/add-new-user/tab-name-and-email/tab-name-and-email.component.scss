@@ -1,0 +1,70 @@
+.fd_c {
+    flex-direction: column;
+}
+
+.fd_r_jc_sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.address-contdainer {
+    width: 550px;
+    padding: 11px 0 0 0;
+}
+
+.picture-right {
+    width: 400px;
+    padding: 25px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    border-radius: 0;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.fd_r_jc_r {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 15px;
+}
+
+.fd_r_jc_r_ai_c {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+input, p-select {
+    width: 300px;
+}
+
+.distance-input {
+    height: 38px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 41px;
+    margin-bottom: 22px;
+    width: 100%;
+    gap: 15px;
+}
+
+img {
+    height: 200px;
+    width: 140px;
+    border: 8px solid #10B981;
+    border-radius: 10px;
+    box-shadow: 10px 20px 15px silver;
+}
