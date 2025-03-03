@@ -27,8 +27,29 @@
     </div>
     <div class="picture-right">
         <img src="../../../../../../assets/user-man.png" alt="user">
+        <div class="fd_r_jc_c_ai_c">
+            <form class="flex items-center">
+                <p-checkbox formControlName="woman" value="true" inputId="woman" (change)="onCheckboxChange()" />
+                <label for="woman" class="ml-2">Woman</label>
+                <p-checkbox formControlName="man" value="false" inputId="man" (change)="onCheckboxChange()"/>
+                <label for="woman" class="ml-2">Man</label>
+            </form>
+        </div>
+
     </div>
 </div>
-<!-- <div class="fd_r_jc_r">
-    <p>Street:</p><textarea rows="3" cols="18" pTextarea></textarea>
-</div> -->
+<div class="distance-input"></div>
+<div class="fd_r_jc_sb">
+    <div class="left-side-bottom">
+        <div class="fd_r_jc_r_ai_c">
+            <p>E-Mail:</p>
+            <input type="text" [style]="{ width:'440px'}" pInputText formControlName="text" autocomplete="off" />
+        </div>
+        <textarea rows="4" cols="18" pTextarea></textarea>
+    </div>
+    <div class="right-side-bottom">
+        <p-button label="to add" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
+        <p-button label="edit" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
+        <p-button label="remove" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
+    </div>
+</div>
