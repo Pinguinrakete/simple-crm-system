@@ -29,10 +29,10 @@
         <img src="../../../../../../assets/user-man.png" alt="user">
         <div class="fd_r_jc_c_ai_c">
             <form class="flex items-center">
+                <p-checkbox formControlName="man" value="false" inputId="man" (change)="onCheckboxChange()"/>
+                <label for="man" class="ml-2">Man</label>
                 <p-checkbox formControlName="woman" value="true" inputId="woman" (change)="onCheckboxChange()" />
                 <label for="woman" class="ml-2">Woman</label>
-                <p-checkbox formControlName="man" value="false" inputId="man" (change)="onCheckboxChange()"/>
-                <label for="woman" class="ml-2">Man</label>
             </form>
         </div>
 

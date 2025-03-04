@@ -10,19 +10,20 @@
     </div>
     <p-dialog header="Costumer data" [modal]="true" [(visible)]="visible" [style]="{ width: '50rem', 'background-color': '#F3F3F3' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
         <p-tabView severity="info">
-            <p-tabPanel header="Overview"> Overview </p-tabPanel>
-            <p-tabPanel header="Name & Email">
-                <ng-template pTemplate="Name & Email"> 
-                    <app-tab-name-and-email></app-tab-name-and-email>
-                </ng-template>
+            <p-tabPanel header="Overview"> 
+                <app-tab-overview></app-tab-overview>
             </p-tabPanel>
-            <p-tabPanel header="Costumer">ggfgfgf
+            <p-tabPanel header="Name & Email">
+                    <app-tab-name-and-email></app-tab-name-and-email>
             </p-tabPanel>
             <p-tabPanel header="Private">
                 <app-tab-private></app-tab-private>
             </p-tabPanel>
             <p-tabPanel header="Work">
                 <app-tab-work></app-tab-work>
+            </p-tabPanel>
+            <p-tabPanel header="Family">
+                <app-tab-family></app-tab-family>
             </p-tabPanel>
            <p-tabPanel header="Notes">
                 <app-tab-notes></app-tab-notes>
