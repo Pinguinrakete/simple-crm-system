@@ -34,6 +34,8 @@ h3 {
     flex-direction: row;
     justify-content: right;
     gap: 15px;
+    width: 471px;
+    margin-bottom: 46px;
 }
 
 .distance-input {
@@ -49,36 +51,8 @@ textarea {
     width: 275px;
 }
 
-
-
-
-// .left-side-bottom {
-//     width: 650px;
-//     padding: 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: right;
-// }
-
-// .right-side-bottom {
-//     width: 150px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
-
-// .fd_r_jc_c_ai_c {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 30px;
-// }
-
-// label {
-//     margin: 0 15px;
-// }
-
-// textarea {
-//     border-radius: 0;
-// }
+.button-container-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

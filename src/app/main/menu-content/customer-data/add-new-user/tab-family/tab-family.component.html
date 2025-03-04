@@ -23,28 +23,12 @@
             <div class="distance-label-textarea">
                 <p>Children:</p>
             </div>
-            <textarea rows="4" cols="25" pTextarea></textarea>
+            <textarea rows="6" cols="25" pTextarea></textarea>
+            <div class="button-container-bottom-right">
+                <p-button label="to add" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
+                <p-button label="edit" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
+                <p-button label="remove" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
+            </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-<!-- <div class="distance-input"></div>
-<div class="fd_r_jc_sb">
-    <div class="left-side-bottom">
-        <div class="fd_r_jc_r_ai_c">
-            <p>E-Mail:</p>
-            <input type="text" [style]="{ width:'440px'}" pInputText formControlName="text" autocomplete="off" />
-        </div>
-        <textarea rows="4" cols="18" pTextarea></textarea>
-    </div>
-    <div class="right-side-bottom">
-        <p-button label="to add" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
-        <p-button label="edit" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
-        <p-button label="remove" [style]="{ width:'80px', 'margin-bottom':'10px' }" severity="secondary" (click)="visible = false" [disabled]="true" />
-    </div>
-</div> -->
