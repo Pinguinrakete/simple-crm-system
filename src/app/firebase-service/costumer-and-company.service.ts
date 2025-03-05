@@ -11,6 +11,17 @@ import { getFirestore, Firestore, collection, onSnapshot, QuerySnapshot, doc, se
 export class CostumerAndCompanyService {
   company: Company[] = [];
   customer: Customer[] = [];
+  private _visible: boolean = false;
+
+  get visible(): boolean {
+    return this._visible;
+  }
+
+  set visible(value: boolean) {
+    this._visible = value;
+  }
 
   constructor(private firestore: Firestore) { }
+
+  
 }
