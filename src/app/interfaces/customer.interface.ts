@@ -6,7 +6,7 @@ export interface Customer {
         personal_title: String;
         nickname: String;
         man: true;
-        woman: true;
+        woman: false;
         email: String;
         textarea: String;
     },
@@ -31,4 +31,3 @@ export interface Customer {
         notes: String;
     }
 }
-
