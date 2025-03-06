@@ -1,14 +1,15 @@
 export interface Company {
     street: String;
     place: String;
-    federal_state: String;
-    zip_code: Number;
+    federalState: String;
+    zipCode: String;
     state: String;
     company: String,
     position: String;
+    department: String,
     office: String;
-    phone: Number;
-    mobile_phone: String;
-    fax: Number;
+    phone: String;
+    mobilePhone: String;
+    fax: String;
     website: String;
 }

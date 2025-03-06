@@ -1,4 +1,4 @@
-
+<form [formGroup]="company" (ngSubmit)="saveTabCompanyData()">
 <p-dialog header="Costumer data" [modal]="true" [(visible)]="visible" [style]="{ width: '50rem', 'background-color': '#F3F3F3' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
     <p-tabView severity="info">
         <p-tabPanel header="Overview"> 
@@ -11,8 +11,8 @@
             <app-tab-private></app-tab-private>
         </p-tabPanel>
         <p-tabPanel header="Work">
-            <app-tab-work></app-tab-work>
-        </p-tabPanel>
+            <app-tab-work [formGroup]="company"></app-tab-work>
+            </p-tabPanel>
         <p-tabPanel header="Family">
             <app-tab-family></app-tab-family>
         </p-tabPanel>
@@ -21,7 +21,8 @@
         </p-tabPanel>
     </p-tabView>
     <ng-template #footer>
-        <p-button label="OK" (click)="visible = false" />
+        <p-button type="submit" label="OK" (click)="visible = false" />
         <p-button label="Cancel" severity="secondary" [style]="{ 'margin-right': '18px' }" (click)="visible = false"/>
     </ng-template>
 </p-dialog>
+</form>
