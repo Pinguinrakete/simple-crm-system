@@ -1,4 +1,4 @@
-<form [formGroup]="company">
+<form [formGroup]="customerandcompany">
 <div class="fd_c">
     <div class="fd_r_jc_sb">
         <div class="left-side">
@@ -6,23 +6,23 @@
                 <div class="distance-label-textarea">
                     <p>Street:</p>
                 </div>
-                <textarea rows="3" cols="18" formControlName="street" pTextarea></textarea>
+                <textarea rows="3" cols="18" formControlName="companyStreet" pTextarea></textarea>
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Place:</p>
-                <input type="text" pInputText formControlName="place" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyPlace" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>[Federal] state:</p>
-                <input type="text" pInputText me="federalState" autocomplete="off" />
+                <input type="text" pInputText me="companyFederalState" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Zip code</p>
-                <input type="text" pInputText formControlName="zipCode" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyZipCode" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>State:</p>
-                <input type="text" pInputText formControlName="state" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyState" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p-button label="Add existing company" (click)="visible = false" [style]="{ width: '201px', 'background-color': 'red', 'margin-top': '47px' }" />
@@ -31,38 +31,38 @@
         <div class="right-side">
             <div class="fd_r_jc_r_ai_c">
                 <p>Company:</p>
-                <input type="text" pInputText formControlName="company" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyCompany" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Position:</p>
-                <input type="text"  pInputText formControlName="position" autocomplete="off" />
+                <input type="text"  pInputText formControlName="companyPosition" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Department:</p>
-                <input type="text" pInputText formControlName="department" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyDepartment" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Office:</p>
-                <input type="text" pInputText formControlName="office" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyOffice" autocomplete="off" />
             </div>
             <div class="distance-input"></div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Phone:</p>
-                <input type="text" pInputText formControlName="phone" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyPhone" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Mobile Phone:</p>
-                <input type="text" pInputText formControlName="mobilePhone" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyMobilePhone" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Fax:</p>
-                <input type="text" pInputText formControlName="fax" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyFax" autocomplete="off" />
             </div>
         </div>
     </div>
     <div class="bottom-container">
         <p>Website:</p>
-        <input type="text" [style]="{ width:'485px' }" formControlName="website" pInputText autocomplete="off" placeholder="https://" />
+        <input type="text" [style]="{ width:'485px' }" formControlName="companyWebsite" pInputText autocomplete="off" placeholder="https://" />
         <p-button label="Go to" severity="secondary" (click)="visible = false" />
     </div>
 </div>

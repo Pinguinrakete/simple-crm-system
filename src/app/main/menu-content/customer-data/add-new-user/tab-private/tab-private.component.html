@@ -1,47 +1,47 @@
-<div class="fd_c">
+<div class="fd_c" [parentForm]="customerandcompany">
     <div class="fd_r_jc_sb">
         <div class="left-side">
             <div class="fd_r_jc_r">
                 <div class="distance-label-textarea">
                     <p>Street:</p>
                 </div>
-                <textarea rows="3" cols="18" pTextarea></textarea>
+                <textarea rows="3" cols="18" formControlName="customerStreet" pTextarea></textarea>
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Place:</p>
-                <input type="text" pInputText formControlName="text" autocomplete="off" />
+                <input type="text" pInputText formControlName="customerPlace" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
-                <p>[Ferderal] state:</p>
-                <input type="text" pInputText me="text" autocomplete="off" />
+                <p>[Federal] state:</p>
+                <input type="text" pInputText me="customerFederal" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Zip code</p>
-                <input type="text" pInputText formControlName="text" autocomplete="off" />
+                <input type="text" pInputText formControlName="customerZipCode" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>State:</p>
-                <input type="text" pInputText formControlName="text" autocomplete="off" />
+                <input type="text" pInputText formControlName="customerState" autocomplete="off" />
             </div>
         </div>
         <div class="right-side">
             <div class="fd_r_jc_r_ai_c">
                 <p>Phone:</p>
-                <input type="text" pInputText formControlName="text" autocomplete="off" />
+                <input type="text" pInputText formControlName="customerPhone" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Mobile Phone:</p>
-                <input type="text" pInputText formControlName="text" autocomplete="off" />
+                <input type="text" pInputText formControlName="customerMobilePhone" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Fax:</p>
-                <input type="text" pInputText formControlName="text" autocomplete="off" />
+                <input type="text" pInputText formControlName="customerFax" autocomplete="off" />
             </div>
         </div>
     </div>
     <div class="bottom-container">
         <p>Website:</p>
-        <input type="text" [style]="{ width:'485px' }" pInputText formControlName="text" autocomplete="off" placeholder="http://" />
+        <input type="text" [style]="{ width:'485px' }" pInputText formControlName="customerWebsite" autocomplete="off" placeholder="https://" />
         <p-button label="Go to" severity="secondary" (click)="visible = false" />
     </div>
 </div>

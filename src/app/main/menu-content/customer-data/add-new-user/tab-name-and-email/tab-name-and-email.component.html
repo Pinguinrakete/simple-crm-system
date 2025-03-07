@@ -1,16 +1,16 @@
-<div class="fd_r_jc_sb">
+<div class="fd_r_jc_sb" [parentForm]="customerandcompany">
     <div class="address-contdainer">
         <div class="fd_r_jc_r_ai_c">
             <p>First name:</p>
-            <input type="text" pInputText formControlName="text" autocomplete="off" />
+            <input type="text" pInputText formControlName="costumerFirstName" autocomplete="off" />
         </div>
         <div class="fd_r_jc_r_ai_c">
             <p>Second name:</p>
-            <input type="text" pInputText me="text" autocomplete="off" />
+            <input type="text" pInputText me="costumerSecondName" autocomplete="off" />
         </div>
         <div class="fd_r_jc_r_ai_c">
             <p>Surname:</p>
-            <input type="text" pInputText formControlName="text" autocomplete="off" />
+            <input type="text" pInputText formControlName="costumerSurname" autocomplete="off" />
         </div>
         <div class="fd_r_jc_r_ai_c">
             <p>Full name:</p>
@@ -18,20 +18,20 @@
         </div>
         <div class="fd_r_jc_r_ai_c">
             <p>Personal title:</p>
-            <input type="text" pInputText formControlName="text" autocomplete="off" />
+            <input type="text" pInputText formControlName="costumerPersonalTitle" autocomplete="off" />
         </div>
         <div class="fd_r_jc_r_ai_c">
             <p>Nickname:</p>
-            <input type="text" pInputText formControlName="text" autocomplete="off" />
+            <input type="text" pInputText formControlName="costumerNickname" autocomplete="off" />
         </div>
     </div>
     <div class="picture-right">
         <img src="../../../../../../assets/user-man.png" alt="user">
         <div class="fd_r_jc_c_ai_c">
             <form class="flex items-center">
-                <p-checkbox formControlName="man" value="false" inputId="man" (change)="onCheckboxChange()"/>
+                <p-checkbox formControlName="costumerMan" value="false" inputId="man" (change)="onCheckboxChange()"/>
                 <label for="man" class="ml-2">Man</label>
-                <p-checkbox formControlName="woman" value="true" inputId="woman" (change)="onCheckboxChange()" />
+                <p-checkbox formControlName="costumerWoman" value="true" inputId="woman" (change)="onCheckboxChange()" />
                 <label for="woman" class="ml-2">Woman</label>
             </form>
         </div>
