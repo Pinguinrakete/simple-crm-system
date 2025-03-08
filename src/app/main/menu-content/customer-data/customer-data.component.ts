@@ -5,10 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TabViewModule } from 'primeng/tabview';
 import { ReactiveFormsModule } from '@angular/forms';
-
-import { Customer } from '../../../interfaces/customer.interface';
-import { Company } from '../../../interfaces/company.interface';
-
 import { DataService } from '../../../firebase-service/dataservice.service'
 
 @Component({

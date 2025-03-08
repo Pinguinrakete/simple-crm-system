@@ -10,9 +10,7 @@ import { TabPrivateComponent } from './tab-private/tab-private.component';
 import { TabWorkComponent } from './tab-work/tab-work.component';
 import { TabNotesComponent } from './tab-notes/tab-notes.component';
 import { TabFamilyComponent } from './tab-family/tab-family.component';
-
-import { InputCustomerAndCompany } from '../../../../interfaces/customerandcompany.interface';
-
+import { ContentInput } from '../../../../interfaces/data';
 import { DataService } from '../../../../firebase-service/dataservice.service'
 
 @Component({
@@ -22,12 +20,10 @@ import { DataService } from '../../../../firebase-service/dataservice.service'
   styleUrl: './add-new-user.component.scss'
 })
 export class AddNewUserComponent {
-  customerandcompany: FormGroup;
+  contentInput: FormGroup;
 
-  constructor(private fb: FormBuilder, private dataService: DataService) { }
-
-
-    this.customerandcompany = this.fb.group<InputCustomerAndCompany>({
+  constructor(private fb: FormBuilder, private dataService: DataService) { 
+    this.contentInput = this.fb.group<ContentInput>({
       customerFirstName: '',
       customerSecondName: '',
       customerSurname: '',
@@ -63,13 +59,12 @@ export class AddNewUserComponent {
       companyPhone: NaN,
       companyMobilePhone: NaN,
       companyFax: NaN,
-      companyWebsite: '',
+      companyWebsite: ''
     });
   }
 
 saveTabCompanyData() {
-    console.log(this.customerandcompany.value);
-    console.log("ZipCode: ", this.customerandcompany.get('zipCode')?.value);
+    console.log(this.contentInput.value);
     // const customerData = this.company.value;
     // this.dataService.saveCompanyData(customerData); // Speichern in Firebase
 }

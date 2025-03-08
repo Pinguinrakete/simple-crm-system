@@ -1,5 +1,4 @@
-<form [formGroup]="customerandcompany">
-<div class="fd_c">
+<div class="fd_c" [formGroup]="parentForm">
     <div class="fd_r_jc_sb">
         <div class="left-side">
             <div class="fd_r_jc_r">
@@ -14,11 +13,11 @@
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>[Federal] state:</p>
-                <input type="text" pInputText me="companyFederalState" autocomplete="off" />
+                <input type="text" pInputText formControlName="companyFederalState" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Zip code</p>
-                <input type="text" pInputText formControlName="companyZipCode" autocomplete="off" />
+                <input type="number" pInputText formControlName="companyZipCode" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>State:</p>
@@ -48,15 +47,15 @@
             <div class="distance-input"></div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Phone:</p>
-                <input type="text" pInputText formControlName="companyPhone" autocomplete="off" />
+                <input type="number" pInputText formControlName="companyPhone" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Mobile Phone:</p>
-                <input type="text" pInputText formControlName="companyMobilePhone" autocomplete="off" />
+                <input type="number" pInputText formControlName="companyMobilePhone" autocomplete="off" />
             </div>
             <div class="fd_r_jc_r_ai_c">
                 <p>Fax:</p>
-                <input type="text" pInputText formControlName="companyFax" autocomplete="off" />
+                <input type="number" pInputText formControlName="companyFax" autocomplete="off" />
             </div>
         </div>
     </div>
@@ -66,4 +65,3 @@
         <p-button label="Go to" severity="secondary" (click)="visible = false" />
     </div>
 </div>
-</form>

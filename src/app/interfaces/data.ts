@@ -1,4 +1,4 @@
-export interface InputCustomerAndCompany {
+export interface ContentInput {
     customerFirstName: string;
     customerSecondName: string;
     customerSurname: string;
